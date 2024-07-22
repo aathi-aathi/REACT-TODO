@@ -15,7 +15,6 @@ function Todo(){
         setProd(data)
      }
      const deleteTodo= async(todoId)=>{
-      confirm("Do you want to delete ?")
          await removeData(todoId)
          setProd(prod.filter(todo=> todo.id !== todoId));
      }
